@@ -20,10 +20,10 @@
     </modes>
 
     <characters>
-        <character name="Sniper 1">
+        <character name="Sniper 1" image="sniper1.jpg">
             <description>Un francotirador clásico con gran precisión.</description>
         </character>
-        <character name="Sniper 2">
+        <character name="Sniper 2" image="sniper2.jpg">
             <description>Un tirador veloz con reflejos increíbles.</description>
         </character>
     </characters>
