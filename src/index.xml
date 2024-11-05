@@ -19,4 +19,7 @@
             <keys>E (Jugador 1) / flecha Derecha (Jugador 2)</keys>
         </control>
     </controls>
+    <footer>
+        <credits>Desarrollado por Hugo Sierra & Daniel Holanda en colaboración con Sniper Games</credits>
+    </footer>
 </game>
