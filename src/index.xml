@@ -27,4 +27,16 @@
         </character>
     </characters>
     
+        <controls>
+        <control>
+            <action>Saltar</action>
+            <keys>W (Jugador 1) / flecha Arriba (Jugador 2)</keys>
+        </control>
+        <control>
+            <action>Disparar</action>
+            <keys>E (Jugador 1) / flecha Derecha (Jugador 2)</keys>
+        </control>
+    </controls>
+
+
 </game>
