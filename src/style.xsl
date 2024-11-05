@@ -77,3 +77,58 @@
                     <h1><xsl:value-of select="game/header/title"/></h1>
                     <p><xsl:value-of select="game/header/subtitle"/></p>
                 </header>
+                <!-- Description -->
+                <section>
+                    <h2>Descripción</h2>
+                    <xsl:for-each select="game/description/paragraph">
+                        <p><xsl:value-of select="."/></p>
+                    </xsl:for-each>
+                </section>
+
+                <!-- Game Modes -->
+                <section>
+                    <h2>Modos de Juego</h2>
+                    <ul>
+                        <xsl:for-each select="game/modes/mode">
+                            <li>
+                                <strong><xsl:value-of select="@name"/></strong> - 
+                                <xsl:value-of select="details"/>
+                            </li>
+                        </xsl:for-each>
+                    </ul>
+                </section>
+
+                <!-- Characters -->
+                <section>
+                    <h2>Personajes</h2>
+                    <div class="columns">
+                        <xsl:for-each select="game/characters/character">
+                            <div>
+                                <strong><xsl:value-of select="@name"/></strong>: 
+                                <p><xsl:value-of select="description"/></p>
+                            </div>
+                        </xsl:for-each>
+                    </div>
+                </section>
+
+                <!-- Controls -->
+                <section>
+                    <h2>Controles</h2>
+                    <div class="columns">
+                        <xsl:for-each select="game/controls/control">
+                            <div>
+                                <strong><xsl:value-of select="action"/></strong> - 
+                                <p><xsl:value-of select="keys"/></p>
+                            </div>
+                        </xsl:for-each>
+                    </div>
+                </section>
+
+                <!-- Footer -->
+                <footer>
+                    <p class="credits"><xsl:value-of select="game/footer/credits"/></p>
+                </footer>
+            </body>
+        </html>
+    </xsl:template>
+</xsl:stylesheet>
