@@ -13,3 +13,13 @@
                         margin: 0;
                         padding: 0;
                     }
+                    header, footer {
+                        background: #444;
+                        padding: 20px;
+                        text-align: center;
+                        animation: fadeIn 2s ease;
+                    }
+                    header h1 {
+                        font-size: 2.5em;
+                        color: #FF6347;
+                    }
