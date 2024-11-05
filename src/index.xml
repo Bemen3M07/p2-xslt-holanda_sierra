@@ -8,31 +8,8 @@
     <description>
         <paragraph>Rooftop Snipers es un emocionante juego de disparos donde compites con otro jugador en un combate uno a uno en lo alto de un edificio. ¡Evita caer y derriba a tu oponente!</paragraph>
     </description>
-<<<<<<< HEAD
     
     <controls>
-=======
-
-        <modes>
-        <mode name="Un jugador">
-            <details>Compite contra la IA en emocionantes partidas.</details>
-        </mode>
-        <mode name="Multijugador">
-            <details>Juega con un amigo en el mismo dispositivo y demuestra quién es el mejor.</details>
-        </mode>
-    </modes>
-
-    <characters>
-        <character name="Sniper 1">
-            <description>Un francotirador clásico con gran precisión.</description>
-        </character>
-        <character name="Sniper 2">
-            <description>Un tirador veloz con reflejos increíbles.</description>
-        </character>
-    </characters>
-    
-        <controls>
->>>>>>> 05dc2d64f0b100615628b50886a56929347aff3c
         <control>
             <action>Saltar</action>
             <keys>W (Jugador 1) / flecha Arriba (Jugador 2)</keys>
