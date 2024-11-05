@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<informacion>
-    <contenido>
-    </contenido>
-</informacion>
+<game>
+    <header>
+        <title>Rooftop Snipers</title>
+        <subtitle>Un duelo épico en los tejados</subtitle>
+    </header>
+    
+    <description>
+        <paragraph>Rooftop Snipers es un emocionante juego de disparos donde compites con otro jugador en un combate uno a uno en lo alto de un edificio. ¡Evita caer y derriba a tu oponente!</paragraph>
+    </description>
+</game>
