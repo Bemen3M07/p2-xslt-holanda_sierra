@@ -20,7 +20,7 @@
     </modes>
 
     <characters>
-        <character name="Sniper 1" image="Foto.png">
+        <character name="Sniper 1" image="ochoa.jpg">
             <description>Un francotirador clásico con gran precisión.</description>
         </character>
         <character name="Sniper 2" image="sniper2.jpg">
