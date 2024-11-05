@@ -54,3 +54,26 @@
                     li:hover {
                         background: #555;
                     }
+                     .credits {
+                        font-size: 0.8em;
+                        color: #aaa;
+                    }
+                    /* Columnas */
+                    .columns {
+                        display: grid;
+                        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                        gap: 15px;
+                    }
+                    /* Animaciones */
+                    @keyframes fadeIn {
+                        from { opacity: 0; }
+                        to { opacity: 1; }
+                    }
+                </style>
+            </head>
+            <body>
+                <!-- Header -->
+                <header>
+                    <h1><xsl:value-of select="game/header/title"/></h1>
+                    <p><xsl:value-of select="game/header/subtitle"/></p>
+                </header>
