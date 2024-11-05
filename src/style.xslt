@@ -1,68 +1,133 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
-    <xsl:output method="html" encoding="UTF-8" indent="yes" />
-
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<xsl:output method="html" encoding="UTF-8" indent="yes" />
     <xsl:template match="/">
         <html>
             <head>
-                <title>Game Information</title>
+                <title>Rooftop Snipers</title>
                 <style>
-                    body { font-family: Arial, sans-serif; color: #333; }
-                    h1, h2, h3 { color: #003366; }
-                    .section { margin: 20px 0; }
-                    .character, .ability { margin: 10px 0; padding: 10px; border: 1px solid #ccc; border-radius: 5px; background-color: #f9f9f9; }
-                    .character h3, .ability h3 { margin: 0; color: #003366; }
+                    body {
+                        font-family: Arial, sans-serif;
+                        background: linear-gradient(to bottom, #111, #333);
+                        color: #fefefe;
+                        margin: 0;
+                        padding: 0;
+                    }
+                    header, footer {
+                        background: #444;
+                        padding: 20px;
+                        text-align: center;
+                        animation: fadeIn 2s ease;
+                    }
+                    header h1 {
+                        font-size: 2.5em;
+                        color: #FF6347;
+                    }
+                    section {
+                        margin: 20px;
+                        padding: 20px;
+                        background: #222;
+                        border-radius: 8px;
+                        box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+                        transition: transform 0.3s ease;
+                    }
+                    section:hover {
+                        transform: scale(1.02);
+                    }
+                    h2 {
+                        color: #FF6347;
+                    }
+                    p, ul {
+                        margin: 10px 0;
+                    }
+                    ul {
+                        list-style-type: none;
+                        padding: 0;
+                    }
+                    li {
+                        background: #333;
+                        padding: 10px;
+                        margin: 5px 0;
+                        border-radius: 5px;
+                        transition: background 0.3s ease;
+                    }
+                    li:hover {
+                        background: #555;
+                    }
+                     .credits {
+                        font-size: 0.8em;
+                        color: #aaa;
+                    }
+                    /* Columnas */
+                    .columns {
+                        display: grid;
+                        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                        gap: 15px;
+                    }
+                    /* Animaciones */
+                    @keyframes fadeIn {
+                        from { opacity: 0; }
+                        to { opacity: 1; }
+                    }
                 </style>
             </head>
             <body>
-                <h1><xsl:value-of select="Game/Title" /></h1>
-                <p><strong>Desarrollador:</strong> <xsl:value-of select="Game/Developer" /></p>
-                <p><strong>Descripción:</strong> <xsl:value-of select="Game/Description" /></p>
-                <p><strong>Fecha de Lanzamiento:</strong> <xsl:value-of select="Game/ReleaseDate" /></p>
+                <!-- Header -->
+                <header>
+                    <h1><xsl:value-of select="game/header/title"/></h1>
+                    <p><xsl:value-of select="game/header/subtitle"/></p>
+                </header>
+                <!-- Description -->
+                <section>
+                    <h2>Descripción</h2>
+                    <xsl:for-each select="game/description/paragraph">
+                        <p><xsl:value-of select="."/></p>
+                    </xsl:for-each>
+                </section>
 
-                <!-- Platforms -->
-                <div class="section">
-                    <h2>Plataformas</h2>
+                <!-- Game Modes -->
+                <section>
+                    <h2>Modos de Juego</h2>
                     <ul>
-                        <xsl:for-each select="Game/Platforms/Platform">
-                            <li><xsl:value-of select="." /></li>
+                        <xsl:for-each select="game/modes/mode">
+                            <li>
+                                <strong><xsl:value-of select="@name"/></strong> - 
+                                <xsl:value-of select="details"/>
+                            </li>
                         </xsl:for-each>
                     </ul>
-                </div>
-
-                <!-- Genres -->
-                <div class="section">
-                    <h2>Géneros</h2>
-                    <ul>
-                        <xsl:for-each select="Game/Genres/Genre">
-                            <li><xsl:value-of select="." /></li>
-                        </xsl:for-each>
-                    </ul>
-                </div>
+                </section>
 
                 <!-- Characters -->
-                <div class="section">
+                <section>
                     <h2>Personajes</h2>
-                    <xsl:for-each select="Game/Characters/Character">
-                        <div class="character">
-                            <h3><xsl:value-of select="Name" /></h3>
-                            <p><strong>Descripción:</strong> <xsl:value-of select="Description" /></p>
-                            <p><strong>Arma Inicial:</strong> <xsl:value-of select="StartingWeapon" /></p>
-                        </div>
-                    </xsl:for-each>
-                </div>
+                    <div class="columns">
+                        <xsl:for-each select="game/characters/character">
+                            <div>
+                                <strong><xsl:value-of select="@name"/></strong>: 
+                                <p><xsl:value-of select="description"/></p>
+                            </div>
+                        </xsl:for-each>
+                    </div>
+                </section>
 
-                <!-- Abilities -->
-                <div class="section">
-                    <h2>Habilidades</h2>
-                    <xsl:for-each select="Game/Abilities/Ability">
-                        <div class="ability">
-                            <h3><xsl:value-of select="Name" /></h3>
-                            <p><strong>Descripción:</strong> <xsl:value-of select="Description" /></p>
-                            <p><strong>Efecto:</strong> <xsl:value-of select="Effect" /></p>
-                        </div>
-                    </xsl:for-each>
-                </div>
+                <!-- Controls -->
+                <section>
+                    <h2>Controles</h2>
+                    <div class="columns">
+                        <xsl:for-each select="game/controls/control">
+                            <div>
+                                <strong><xsl:value-of select="action"/></strong> - 
+                                <p><xsl:value-of select="keys"/></p>
+                            </div>
+                        </xsl:for-each>
+                    </div>
+                </section>
+
+                <!-- Footer -->
+                <footer>
+                    <p class="credits"><xsl:value-of select="game/footer/credits"/></p>
+                </footer>
             </body>
         </html>
     </xsl:template>
