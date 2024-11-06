@@ -5,9 +5,11 @@
         <html>
             <head>
                 <title>Rooftop Snipers</title>
+                <!-- Importación de fuente retro pixelada -->
+                <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"/>
                 <style>
                     body {
-                        font-family: Arial, sans-serif;
+                        font-family: 'Press Start 2P', cursive;
                         background: linear-gradient(to bottom, #111, #333);
                         color: #fefefe;
                         margin: 0;
@@ -54,17 +56,15 @@
                     li:hover {
                         background: #555;
                     }
-                     .credits {
+                    .credits {
                         font-size: 0.8em;
                         color: #aaa;
                     }
-                    /* Columnas */
                     .columns {
                         display: grid;
                         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
                         gap: 15px;
                     }
-                    /* Animaciones */
                     @keyframes fadeIn {
                         from { opacity: 0; }
                         to { opacity: 1; }
@@ -77,6 +77,7 @@
                     <h1><xsl:value-of select="game/header/title"/></h1>
                     <p><xsl:value-of select="game/header/subtitle"/></p>
                 </header>
+                
                 <!-- Description -->
                 <section>
                     <h2>Descripción</h2>
