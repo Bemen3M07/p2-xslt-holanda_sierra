@@ -8,7 +8,7 @@
                 
                 <style>
                     body {
-                        font-family: Arial, sans-serif;
+                        font-family: 'Press Start 2P', cursive;
                         background: linear-gradient(to bottom, #111, #333);
                         color: #fefefe;
                         margin: 0;
