@@ -10,7 +10,7 @@
 
                 
                     body {
-                        font-family: 'Press Start 2P', cursive;
+                        font-family: "Courier New", monospace;
                         background: linear-gradient(to bottom, #111, #333);
                         color: #fefefe;
                         margin: 0;
