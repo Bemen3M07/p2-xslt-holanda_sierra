@@ -5,11 +5,10 @@
         <html>
             <head>
                 <title>Rooftop Snipers</title>
-                <!-- Importación de fuente retro pixelada -->
-                <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"/>
+                
                 <style>
                     body {
-                        font-family: 'Press Start 2P', cursive;
+                        font-family: Arial, sans-serif;
                         background: linear-gradient(to bottom, #111, #333);
                         color: #fefefe;
                         margin: 0;
