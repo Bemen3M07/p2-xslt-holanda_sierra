@@ -152,7 +152,7 @@
                             <div>
                                 <strong><xsl:value-of select="@name"/></strong>: 
                                 <p><xsl:value-of select="description"/></p>
-                                <img src="{@image}" alt="{@name}" style="width: 100%; border-radius: 5px;"/>
+                                <img src="{@image}" alt="{@name}" style="width: 50%; border-radius: 5px;"/>
                             </div>
                         </xsl:for-each>
                     </div>
