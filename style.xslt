@@ -151,6 +151,7 @@
                         from { opacity: 0; }
                         to { opacity: 1; }
                     }
+                    <!-- Define una animación llamada "fadeIn" que hace que un elemento aparezca suavemente desde la opacidad 0 hasta 1 -->
                 </style>
             </head>
             <body>
@@ -159,6 +160,8 @@
                     <h1><xsl:value-of select="game/header/title"/></h1>
                     <p><xsl:value-of select="game/header/subtitle"/></p>
                 </header>
+                <!-- El encabezado muestra el título y subtítulo del juego extraídos del XML -->
+
                 <!-- Description -->
                 <section>
                     <h2>Descripción</h2>
@@ -166,6 +169,7 @@
                         <p><xsl:value-of select="."/></p>
                     </xsl:for-each>
                 </section>
+                <!-- Muestra la descripción del juego, iterando sobre cada párrafo dentro de la etiqueta <description> -->
 
                 <!-- Game Modes -->
                 <section>
@@ -179,6 +183,8 @@
                         </xsl:for-each>
                     </ul>
                 </section>
+                <!-- Muestra los modos de juego, extrayendo el nombre y los detalles de cada modo -->
+
 
                 <!-- Characters -->
                 <section>
