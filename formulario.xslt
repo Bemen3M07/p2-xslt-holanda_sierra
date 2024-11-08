@@ -164,13 +164,14 @@
                     /* Estilos previos ... */
                     
                     .popup-overlay {
-                        display: none;
+                        display: none; /* Oculto al cargar */
                         position: fixed;
                         top: 0;
                         left: 0;
                         width: 100%;
                         height: 100%;
                         background-color: rgba(0, 0, 0, 0.8);
+                        display: flex;
                         align-items: center;
                         justify-content: center;
                         z-index: 999;
@@ -206,16 +207,13 @@
                 </style>
                 <script>
                     function mostrarPopup(event) {
-                        event.preventDefault(); // Prevenir el envío del formulario
-                        
-                        // Mostrar el popup
-                        document.getElementById("popup-overlay").style.display = "flex";
+                        event.preventDefault(); // Prevenir envío de formulario
+                        document.getElementById("popup-overlay").style.display = "flex"; // Mostrar el popup
                     }
 
                     function cerrarPopup() {
-                        // Ocultar el popup y redirigir a index.xml
                         document.getElementById("popup-overlay").style.display = "none";
-                        window.location.href = "index.xml";
+                        window.location.href = "index.xml"; // Redirigir a index.xml
                     }
                 </script>
             </head>
