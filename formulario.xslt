@@ -1,84 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-    <xsl:output method="html" encoding="UTF-8" indent="yes" />
-    
+    <xsl:output method="html" encoding="UTF-8" indent="yes"/>
+
     <xsl:template match="/">
         <html>
             <head>
                 <title>Formulario de Contacto</title>
                 <style>
                     body {
-                        font-family: "Courier New", monospace;
-                        background: linear-gradient(to bottom, #111, #333);
-                        color: #fefefe;
-                        margin: 0;
-                        padding: 0;
+                        font-family: Arial, sans-serif;
+                        background-color: #f9f9f9;
+                        color: #333;
                         display: flex;
                         align-items: center;
                         justify-content: center;
                         height: 100vh;
+                        margin: 0;
                     }
                     .form-container {
-                        background-color: #222;
+                        background-color: #fff;
                         padding: 20px;
                         border-radius: 8px;
-                        box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
-                        width: 300px;
+                        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
                         text-align: center;
                     }
-                    .form-container input, .form-container textarea {
+                    .form-container h2 {
+                        color: #ff5733;
+                    }
+                    input, textarea {
                         width: 100%;
                         padding: 10px;
                         margin: 10px 0;
-                        border: 1px solid #ccc;
-                        border-radius: 5px;
-                        background-color: #333;
-                        color: #fff;
+                        border-radius: 4px;
+                        border: 1px solid #ddd;
                     }
                     .submit-button {
-                        background-color: #FF6347;
+                        padding: 12px 24px;
+                        background-color: #ff5733;
                         color: white;
                         font-weight: bold;
-                        padding: 10px 20px;
                         border: none;
-                        border-radius: 5px;
+                        border-radius: 4px;
                         cursor: pointer;
-                        transition: background-color 0.3s;
                     }
                     .submit-button:hover {
-                        background-color: #ff4500;
-                    }
-                    .close-button {
-                        background-color: #444;
-                        color: white;
-                        font-weight: bold;
-                        padding: 10px 20px;
-                        border: none;
-                        border-radius: 5px;
-                        cursor: pointer;
-                        margin-top: 10px;
+                        background-color: #c43d22;
                     }
                 </style>
             </head>
             <body>
                 <div class="form-container">
-                    <xsl:choose>
-                        <!-- Si el formulario no ha sido enviado, muestra el formulario -->
-                        <xsl:when test="not(/form/sent)">
-                            <form action="formulario.xsl">
-                                <input type="text" name="name" placeholder="Nombre" required />
-                                <input type="email" name="email" placeholder="Correo electrónico" required />
-                                <textarea name="message" placeholder="Mensaje"></textarea>
-                                <button type="submit" class="submit-button">Enviar</button>
-                            </form>
-                        </xsl:when>
-                        
-                        <!-- Si el formulario ha sido enviado, muestra el mensaje de confirmación -->
-                        <xsl:otherwise>
-                            <p>El formulario se ha enviado correctamente.</p>
-                            <button class="close-button" onclick="window.location.href='index.html'">Cerrar</button>
-                        </xsl:otherwise>
-                    </xsl:choose>
+                    <h2>Contacto</h2>
+                    <form action="formulario.xml">
+                        <input type="text" name="nombre" placeholder="Nombre" required/>
+                        <input type="email" name="correo" placeholder="Correo electrónico" required/>
+                        <textarea name="mensaje" placeholder="Mensaje" required></textarea>
+                        <button type="submit" class="submit-button">Enviar</button>
+                    </form>
                 </div>
             </body>
         </html>
