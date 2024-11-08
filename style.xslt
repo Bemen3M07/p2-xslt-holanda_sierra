@@ -259,16 +259,13 @@
 
                 <!-- Formulario de contacto -->
                 <section class="form-container">
-                    <form>
+                    <form>                    
                         <input type="text" name="name" placeholder="Nombre"/>
                         <input type="email" name="email" placeholder="Correo electrónico"/>
                         <textarea name="message" placeholder="Mensaje"></textarea>
-                        
-                            <button type="submit" href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSKjsnwhdFsnFZbmlBjglDNfgRgRZpMsMqnxkkNjKjHFbTZTkxGFRTjtLzBJWVPFbsbXhjfr">Enviar</button>
-                        
+                            <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSKjsnwhdFsnFZbmlBjglDNfgRgRZpMsMqnxkkNjKjHFbTZTkxGFRTjtLzBJWVPFbsbXhjfr" class="play-button">Enviar</a>
                     </form>
                 </section>
-
             </body>
         </html>
     </xsl:template>
