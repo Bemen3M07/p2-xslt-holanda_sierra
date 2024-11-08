@@ -149,13 +149,10 @@
                         </xsl:for-each>
                     </div>
                 </section>
-                <!-- Footer https://poki.com/es/g/rooftop-snipers-2 -->
+                <!-- Footer -->
                 <footer>
-                    <div style="margin-top: 20px;">
-                        <a>
-           <xsl:attribute name="href">
-               <xsl:value-of select="https://poki.com/es/g/rooftop-snipers-2"/>
-           </xsl:attribute>
+                    <p class="credits"><xsl:value-of select="game/footer/credits"/></p>
+                     <button onclick="window.location.href='https://poki.com/es/g/rooftop-snipers-2';">JUGAR YA</button>
                 </footer>
             </body>
         </html>
