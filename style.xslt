@@ -257,13 +257,10 @@
                      <!-- Muestra los créditos del juego -->
                 </footer>
 
-                <!-- Formulario de contacto -->
+                <!-- Acceder al Formulario -->
                 <section class="form-container">
                     <form>                    
-                        <input type="text" name="name" placeholder="Nombre"/>
-                        <input type="email" name="email" placeholder="Correo electrónico"/>
-                        <textarea name="message" placeholder="Mensaje"></textarea>
-                            <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSKjsnwhdFsnFZbmlBjglDNfgRgRZpMsMqnxkkNjKjHFbTZTkxGFRTjtLzBJWVPFbsbXhjfr" class="play-button">Enviar</a>
+                        <a href="formulario.xsl" class="button">Formulario de Inscripcion</a>
                     </form>
                 </section>
             </body>
