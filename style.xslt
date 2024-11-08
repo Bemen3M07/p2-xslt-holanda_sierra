@@ -260,7 +260,7 @@
                 <!-- Acceder al Formulario -->
                 <section class="form-container">
                     <form>                    
-                        <a href="formulario.xsl" class="button">Formulario de Inscripcion</a>
+                        <a href="formulario.xml" class="button">Formulario de Inscripcion</a>
                     </form>
                 </section>
             </body>

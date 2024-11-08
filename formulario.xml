@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="formulario.xsl"?>
+<formulario>
+    <form>
+        <sent>false</sent>
+        <nombre></nombre>
+        <correo></correo>
+        <mensaje></mensaje>
+    </form>
+</formulario>
