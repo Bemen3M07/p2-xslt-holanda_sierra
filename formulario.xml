@@ -20,4 +20,8 @@
             <field name="message" label="Mensaje" type="textarea" />
         </form_fields>
     </form>
-    </game>
+    
+    <footer>
+        <credits>Desarrollado por Rooftop Studios</credits>
+    </footer>
+</game>
