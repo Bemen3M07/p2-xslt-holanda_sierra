@@ -149,12 +149,15 @@
                         </xsl:for-each>
                     </div>
                 </section>
-
                 <!-- Footer -->
                 <footer>
-                    <p class="credits"><xsl:value-of select="game/footer/credits"/></p>
-                     <button onclick="window.location.href='https://poki.com/es/g/rooftop-snipers-2';">JUGAR YA</button>
-                     
+                    <div class="game-container" style="text-align:center; padding: 20px;">
+                    <!-- Imagen del juego -->
+                    <img src="{https://slopegame.io/upload/imgs/rooftop-snipers-logo.jpg}" class="game-image" alt="Imagen del juego"/>
+                    <!-- Botón "Jugar Ya" debajo de la imagen -->
+                    <div style="margin-top: 20px;">
+                        <a href="{https://poki.com/es/g/rooftop-snipers-2l}" class="play-button">JUGAR YA</a>
+                    </div>
                 </footer>
             </body>
         </html>
