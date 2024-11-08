@@ -18,7 +18,7 @@
             <details>Juega con un amigo en el mismo dispositivo y demuestra quién es el mejor.</details>
         </mode>
     </modes>
-
+    
     <characters>
         <character name="Sniper 1" image="dani.webp">
             <description>Un francotirador clásico con gran precisión.</description>

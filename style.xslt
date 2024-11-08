@@ -191,7 +191,7 @@
                         </xsl:for-each>
                     </div>
                 </section>
-
+                
                 <!-- Controls -->
                 <section>
                     <h2>Controles</h2>
