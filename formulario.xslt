@@ -182,7 +182,7 @@
                         <input type="email" name="email" placeholder="Correo electrónico"/>
                         <textarea name="message" placeholder="Mensaje"></textarea>
                         <form>                    
-                        <a href="formulario.xml" class="button">Enviar</a>
+                        <a href="index.xml" class="button">Enviar</a>
                         </form>
                     </form>
                 </section>
