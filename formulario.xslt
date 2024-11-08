@@ -51,21 +51,6 @@
                         background-color: #c43d22;
                     }
                 </style>
-
-                <script>
-                    function mostrarPopup(event) {
-                        event.preventDefault(); // Prevenir el envío del formulario
-                        
-                        // Mostrar el popup
-                        document.getElementById("popup-overlay").style.display = "flex";
-                    }
-
-                    function cerrarPopup() {
-                        // Ocultar el popup y redirigir a index.xml
-                        document.getElementById("popup-overlay").style.display = "none";
-                        window.location.href = "index.xml";
-                    }
-                </script>
             </head>
 
             <body>
