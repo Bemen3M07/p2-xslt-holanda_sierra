@@ -132,18 +132,20 @@
                         transition: all 0.3s ease;
                         text-decoration: none;
                     }
+                    <!-- Estilos para el botón, con formato de texto, colores y bordes redondeados. La transición permite un cambio suave al interactuar con el botón -->
                     .button:hover {
                         background-color: #ff4500;
                         box-shadow: 0px 8px 15px rgba(255, 99, 71, 0.5);
                         transform: scale(1.05);
                     }
-
+                    <!-- Estilos del botón al pasar el ratón por encima: cambia el color de fondo, agrega sombra y aumenta el tamaño del botón -->
                     /* Columnas */
                     .columns {
                         display: grid;
                         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
                         gap: 15px;
                     }
+                    <!-- Define una estructura de columnas con un diseño de cuadrícula que ajusta el número de columnas automáticamente, con un espacio de 15px entre ellas -->
                     /* Animaciones */
                     @keyframes fadeIn {
                         from { opacity: 0; }
