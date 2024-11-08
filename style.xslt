@@ -132,23 +132,26 @@
                         transition: all 0.3s ease;
                         text-decoration: none;
                     }
+                    <!-- Estilos para el botón, con formato de texto, colores y bordes redondeados. La transición permite un cambio suave al interactuar con el botón -->
                     .button:hover {
                         background-color: #ff4500;
                         box-shadow: 0px 8px 15px rgba(255, 99, 71, 0.5);
                         transform: scale(1.05);
                     }
-
+                    <!-- Estilos del botón al pasar el ratón por encima: cambia el color de fondo, agrega sombra y aumenta el tamaño del botón -->
                     /* Columnas */
                     .columns {
                         display: grid;
                         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
                         gap: 15px;
                     }
+                    <!-- Define una estructura de columnas con un diseño de cuadrícula que ajusta el número de columnas automáticamente, con un espacio de 15px entre ellas -->
                     /* Animaciones */
                     @keyframes fadeIn {
                         from { opacity: 0; }
                         to { opacity: 1; }
                     }
+                    <!-- Define una animación llamada "fadeIn" que hace que un elemento aparezca suavemente desde la opacidad 0 hasta 1 -->
                 </style>
             </head>
             <body>
@@ -157,6 +160,8 @@
                     <h1><xsl:value-of select="game/header/title"/></h1>
                     <p><xsl:value-of select="game/header/subtitle"/></p>
                 </header>
+                <!-- El encabezado muestra el título y subtítulo del juego extraídos del XML -->
+
                 <!-- Description -->
                 <section>
                     <h2>Descripción</h2>
@@ -164,6 +169,7 @@
                         <p><xsl:value-of select="."/></p>
                     </xsl:for-each>
                 </section>
+                <!-- Muestra la descripción del juego, iterando sobre cada párrafo dentro de la etiqueta <description> -->
 
                 <!-- Game Modes -->
                 <section>
@@ -177,6 +183,8 @@
                         </xsl:for-each>
                     </ul>
                 </section>
+                <!-- Muestra los modos de juego, extrayendo el nombre y los detalles de cada modo -->
+
 
                 <!-- Characters -->
                 <section>
@@ -191,7 +199,12 @@
                         </xsl:for-each>
                     </div>
                 </section>
+<<<<<<< HEAD
                 
+=======
+                <!-- Muestra una lista de personajes, cada uno con nombre, descripción y una imagen. Las imágenes tienen un tamaño del 50% y bordes redondeados -->
+
+>>>>>>> f919a11e5feee06d6e701d1f49a8a2b5a76da941
                 <!-- Controls -->
                 <section>
                     <h2>Controles</h2>
@@ -204,10 +217,14 @@
                         </xsl:for-each>
                     </div>
                 </section>
+                <!-- Muestra los controles del juego, con la acción y las teclas asociadas a cada control -->
+
                 <!-- Footer -->
                 <footer>
                     <a href="https://poki.com/es/g/rooftop-snipers-2" class="play-button">JUGAR YA</a>
+                    <!-- Enlace para jugar, con el estilo de botón previamente definido -->
                      <p class="credits"><xsl:value-of select="game/footer/credits"/></p>
+                     <!-- Muestra los créditos del juego -->
                 </footer>
             </body>
         </html>
