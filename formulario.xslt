@@ -165,7 +165,7 @@
                     
                     /* Asegúrate de que el popup esté oculto inicialmente */
                     .popup-overlay {
-                        display: none; /* Popup oculto al cargar la página */
+                        display: none; 
                         position: fixed;
                         top: 0;
                         left: 0;
@@ -206,13 +206,15 @@
                     }
                 </style>
                 <script>
+                    // Mostrar el popup y prevenir el envío
                     function mostrarPopup(event) {
-                        event.preventDefault(); // Prevenir envío de formulario
+                        event.preventDefault(); // Detener el envío del formulario
                         document.getElementById("popup-overlay").style.display = "flex"; // Mostrar el popup
                     }
 
+                    // Cerrar el popup y redirigir a index.xml
                     function cerrarPopup() {
-                        document.getElementById("popup-overlay").style.display = "none";
+                        document.getElementById("popup-overlay").style.display = "none"; // Ocultar el popup
                         window.location.href = "index.xml"; // Redirigir a index.xml
                     }
                 </script>
