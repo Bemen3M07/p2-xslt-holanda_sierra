@@ -161,10 +161,10 @@
                         from { opacity: 0; }
                         to { opacity: 1; }
                     }
-                    /* Estilos previos ... */
+                    /* Estilos popup*/
                     
                     .popup-overlay {
-                        display: none; /* Oculto al cargar */
+                        display: none; /* <-- Esto asegura que el popup no se muestre al cargar */
                         position: fixed;
                         top: 0;
                         left: 0;
@@ -231,10 +231,10 @@
                 </section>
 
                 <section class="form-container">
-                    <form>
-                        <input type="text" name="name" placeholder="Nombre"/>
-                        <input type="email" name="email" placeholder="Correo electrónico"/>
-                        <textarea name="message" placeholder="Mensaje"></textarea>
+                    <form onsubmit="mostrarPopup(event)">
+                        <input type="text" name="name" placeholder="Nombre" required />
+                        <input type="email" name="email" placeholder="Correo electrónico" required />
+                        <textarea name="message" placeholder="Mensaje" required></textarea>
                         <button type="submit">Enviar</button>
                     </form>
                 </section>
