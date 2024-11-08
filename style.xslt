@@ -149,12 +149,12 @@
                         </xsl:for-each>
                     </div>
                 </section>
-                <!-- Footer -->
+                <!-- Footer https://poki.com/es/g/rooftop-snipers-2 -->
                 <footer>
                     <div style="margin-top: 20px;">
-                    <a>
+                        <a>
            <xsl:attribute name="href">
-               <xsl:value-of select="play-url"/>
+               <xsl:value-of select="https://poki.com/es/g/rooftop-snipers-2"/>
            </xsl:attribute>
                 </footer>
             </body>
