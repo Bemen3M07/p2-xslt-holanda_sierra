@@ -263,7 +263,7 @@
                         <input type="text" name="name" placeholder="Nombre"/>
                         <input type="email" name="email" placeholder="Correo electrónico"/>
                         <textarea name="message" placeholder="Mensaje"></textarea>
-                        <button type="submit">Enviar</button>
+                        <button type="submit">Enviar</button> 
                     </form>
                 </section>
 
