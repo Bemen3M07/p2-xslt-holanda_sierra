@@ -263,9 +263,9 @@
                         <input type="text" name="name" placeholder="Nombre"/>
                         <input type="email" name="email" placeholder="Correo electrónico"/>
                         <textarea name="message" placeholder="Mensaje"></textarea>
-                        <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSKjsnwhdFsnFZbmlBjglDNfgRgRZpMsMqnxkkNjKjHFbTZTkxGFRTjtLzBJWVPFbsbXhjfr">
-                            <button type="submit">Enviar</button>
-                        </a>
+                        
+                            <button type="submit" href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSKjsnwhdFsnFZbmlBjglDNfgRgRZpMsMqnxkkNjKjHFbTZTkxGFRTjtLzBJWVPFbsbXhjfr">Enviar</button>
+                        
                     </form>
                 </section>
 
