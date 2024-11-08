@@ -140,12 +140,45 @@
                         transform: scale(1.05);
                     }
                     <!-- Estilos del botón al pasar el ratón por encima: cambia el color de fondo, agrega sombra y aumenta el tamaño del botón -->
-                    /* Columnas */
+                    
                     .columns {
                         display: grid;
                         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
                         gap: 15px;
                     }
+
+                    <!-- Estilo para las columnas del formulario -->
+                    .form-container {
+                        margin-top: 30px;
+                        display: flex;
+                        justify-content: center;
+                        gap: 20px;
+                    }
+
+                    .form-container input, .form-container textarea {
+                        width: 100%;
+                        padding: 10px;
+                        margin: 10px 0;
+                        border: 1px solid #ccc;
+                        border-radius: 5px;
+                        background-color: #333;
+                        color: #fff;
+                    }
+
+                    .form-container button {
+                        padding: 12px 30px;
+                        background-color: #ff5733;
+                        border: none;
+                        border-radius: 5px;
+                        color: white;
+                        font-weight: bold;
+                        cursor: pointer;
+                    }
+
+                    .form-container button:hover {
+                        background-color: #c43d22;
+                    }
+
                     <!-- Define una estructura de columnas con un diseño de cuadrícula que ajusta el número de columnas automáticamente, con un espacio de 15px entre ellas -->
                     /* Animaciones */
                     @keyframes fadeIn {
@@ -223,6 +256,17 @@
                      <p class="credits"><xsl:value-of select="game/footer/credits"/></p>
                      <!-- Muestra los créditos del juego -->
                 </footer>
+
+                <!-- Formulario de contacto -->
+                <section class="form-container">
+                    <form>
+                        <input type="text" name="name" placeholder="Nombre"/>
+                        <input type="email" name="email" placeholder="Correo electrónico"/>
+                        <textarea name="message" placeholder="Mensaje"></textarea>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </section>
+
             </body>
         </html>
     </xsl:template>

@@ -42,4 +42,14 @@
     <footer>
         <credits>Desarrollado por Hugo Sierra y Daniel Holanda en colaboración con Sniper Games</credits>
     </footer>
-</game>
+    <form>
+        <header>
+            <title>Formulario de Contacto</title>
+        </header>
+        <form_fields>
+            <field name="name" label="Nombre" type="text" />
+            <field name="email" label="Correo electrónico" type="email" />
+            <field name="message" label="Mensaje" type="textarea" />
+        </form_fields>
+    </form>
+    </game>
