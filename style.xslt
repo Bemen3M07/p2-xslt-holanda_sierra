@@ -7,8 +7,29 @@
                 <title>Rooftop Snipers</title>
                 
                 <style>
-
-                
+                    footer {
+                        text-align: center;
+                        padding: 20px;
+                        background-color: #f4f4f4;
+                        margin-top: 20px;
+                    }
+                    .play-button {
+                        background-color: #ff5733; /* Color de fondo llamativo */
+                        color: white; /* Texto en blanco */
+                        font-weight: bold;
+                        font-size: 1.2em;
+                        padding: 12px 25px;
+                        text-align: center;
+                        border-radius: 8px;
+                        text-decoration: none;
+                        display: inline-block;
+                        transition: background-color 0.3s;
+                        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra */
+                    }
+                    .play-button:hover {
+                        background-color: #c43d22;
+                        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+                    }
                     body {
                         font-family: "Courier New", monospace;
                         background: linear-gradient(to bottom, #111, #333);
@@ -151,8 +172,7 @@
                 </section>
                 <!-- Footer -->
                 <footer>
-                    <p class="credits"><xsl:value-of select="game/footer/credits"/></p>
-                     <button onclick="window.location.href='https://poki.com/es/g/rooftop-snipers-2';">JUGAR YA</button>
+                    <a href="https://poki.com/es/g/rooftop-snipers-2" class="play-button">JUGAR YA</a>
                 </footer>
             </body>
         </html>
