@@ -151,8 +151,6 @@
                 </section>
                 <!-- Footer -->
                 <footer>
-                    <div class="game-container" style="text-align:center; padding: 20px;">
-                    <!-- Botón "Jugar Ya" debajo de la imagen -->
                     <div style="margin-top: 20px;">
                         <a href="{https://poki.com/es/g/rooftop-snipers-2l}" class="play-button">JUGAR YA</a>
                     </div>
