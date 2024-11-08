@@ -205,64 +205,24 @@
                 </section>
                 <!-- Muestra la descripción del juego, iterando sobre cada párrafo dentro de la etiqueta <description> -->
 
-                <!-- Game Modes -->
-                <section>
-                    <h2>Modos de Juego</h2>
-                    <ul>
-                        <xsl:for-each select="game/modes/mode">
-                            <li>
-                                <strong><xsl:value-of select="@name"/></strong> - 
-                                <xsl:value-of select="details"/>
-                            </li>
-                        </xsl:for-each>
-                    </ul>
+                <!-- Formulario de contacto -->
+                <section class="form-container">
+                    <form>
+                        <input type="text" name="name" placeholder="Nombre"/>
+                        <input type="email" name="email" placeholder="Correo electrónico"/>
+                        <textarea name="message" placeholder="Mensaje"></textarea>
+                        <button type="submit">Enviar</button>
+                    </form>
                 </section>
-                <!-- Muestra los modos de juego, extrayendo el nombre y los detalles de cada modo -->
-
-
-                <!-- Characters -->
-                <section>
-                    <h2>Personajes</h2>
-                    <div class="columns">
-                        <xsl:for-each select="game/characters/character">
-                            <div>
-                                <strong><xsl:value-of select="@name"/></strong>: 
-                                <p><xsl:value-of select="description"/></p>
-                                <img src="{@image}" alt="{@name}" style="width: 50%; border-radius: 5px;"/>
-                            </div>
-                        </xsl:for-each>
-                    </div>
-                </section>
-                <!-- Muestra una lista de personajes, cada uno con nombre, descripción y una imagen. Las imágenes tienen un tamaño del 50% y bordes redondeados -->
-
-                <!-- Controls -->
-                <section>
-                    <h2>Controles</h2>
-                    <div class="columns">
-                        <xsl:for-each select="game/controls/control">
-                            <div>
-                                <strong><xsl:value-of select="action"/></strong> - 
-                                <p><xsl:value-of select="keys"/></p>
-                            </div>
-                        </xsl:for-each>
-                    </div>
-                </section>
-                <!-- Muestra los controles del juego, con la acción y las teclas asociadas a cada control -->
 
                 <!-- Footer -->
                 <footer>
-                    <a href="https://poki.com/es/g/rooftop-snipers-2" class="play-button">JUGAR YA</a>
-                    <!-- Enlace para jugar, con el estilo de botón previamente definido -->
+                
                      <p class="credits"><xsl:value-of select="game/footer/credits"/></p>
                      <!-- Muestra los créditos del juego -->
                 </footer>
 
-                <!-- Acceder al Formulario -->
-                <section class="form-container">
-                    <form>                    
-                        <a href="formulario.xml" class="button">Formulario de Inscripcion</a>
-                    </form>
-                </section>
+        
             </body>
         </html>
     </xsl:template>
