@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- Declaración del documento XML con versión y codificación -->
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-<xsl:output method="html" encoding="UTF-8" indent="yes" />
+    <!-- Definición de la hoja de estilo XSL con la versión y el espacio de nombres XSL -->
+    <xsl:output method="html" encoding="UTF-8" indent="yes" />
+    <!-- Configuración de la salida del XSL para generar HTML con codificación UTF-8 y formato indentado -->
+    
     <xsl:template match="/">
+        <!-- Define una plantilla que se aplica al nodo raíz del XML -->
+
         <html>
             <head>
                 <title>Rooftop Snipers</title>
+                <!-- Título de la página web -->
                 
                 <style>
                     footer {
@@ -13,6 +20,8 @@
                         background-color: #f4f4f4;
                         margin-top: 20px;
                     }
+                    <!-- Estilo del pie de página, con centrado, espaciado y color de fondo -->
+
                     .play-button {
                         background-color: #ff5733; /* Color de fondo llamativo */
                         color: white; /* Texto en blanco */
@@ -26,10 +35,14 @@
                         transition: background-color 0.3s;
                         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra */
                     }
+                    <!-- Botón de "Play" con fondo llamativo, sombra y transición de color al pasar el ratón -->
+
                     .play-button:hover {
                         background-color: #c43d22;
                         box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
                     }
+                    <!-- Cambia el color y la sombra del botón al pasar el ratón por encima -->
+
                     body {
                         font-family: "Courier New", monospace;
                         background: linear-gradient(to bottom, #111, #333);
@@ -37,16 +50,22 @@
                         margin: 0;
                         padding: 0;
                     }
+                    <!-- Estilos generales del cuerpo, incluyendo fuente, colores de fondo y texto, y eliminación de márgenes -->
+
                     header, footer {
                         background: #444;
                         padding: 20px;
                         text-align: center;
                         animation: fadeIn 2s ease;
                     }
+                    <!-- Estilos para el encabezado y pie de página, con animación de entrada y fondo oscuro -->
+
                     header h1 {
                         font-size: 2.5em;
                         color: #FF6347;
                     }
+                    <!-- Título principal del encabezado, con tamaño y color llamativo -->
+
                     section {
                         margin: 20px;
                         padding: 20px;
@@ -54,21 +73,30 @@
                         border-radius: 8px;
                         box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
                         transition: transform 0.3s ease;
-                        text-align: center;
                     }
+                    <!-- Sección de contenido con fondo oscuro, sombra y bordes redondeados; escala al pasar el ratón -->
+
                     section:hover {
                         transform: scale(1.02);
                     }
+                    <!-- Agranda la sección ligeramente al pasar el ratón por encima -->
+
                     h2 {
                         color: #FF6347;
                     }
+                    <!-- Título de segundo nivel con color resaltado -->
+
                     p, ul {
                         margin: 10px 0;
                     }
+                    <!-- Espaciado para párrafos y listas -->
+
                     ul {
                         list-style-type: none;
                         padding: 0;
                     }
+                    <!-- Listas sin viñetas ni relleno a la izquierda -->
+
                     li {
                         background: #333;
                         padding: 10px;
@@ -76,13 +104,18 @@
                         border-radius: 5px;
                         transition: background 0.3s ease;
                     }
+                    <!-- Elementos de lista con fondo oscuro y borde redondeado, cambiando al pasar el ratón -->
+
                     li:hover {
                         background: #555;
                     }
-                     .credits {
+                    <!-- Cambia el color de fondo de los elementos de lista al pasar el ratón -->
+
+                    .credits {
                         font-size: 0.8em;
                         color: #aaa;
                     }
+                    <!-- Estilo de créditos con fuente pequeña y color gris claro -->
 
                     .button {
                         display: inline-block;
