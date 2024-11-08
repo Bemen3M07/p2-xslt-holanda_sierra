@@ -161,47 +161,6 @@
                         from { opacity: 0; }
                         to { opacity: 1; }
                     }
-                    .popup-overlay {
-                        display: none; /* Oculto al cargar */
-                        position: fixed;
-                        top: 0;
-                        left: 0;
-                        width: 100%;
-                        height: 100%;
-                        background-color: rgba(0, 0, 0, 0.8);
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        z-index: 999;
-                    }
-                    
-                    .popup-content {
-                        background-color: #fff;
-                        padding: 20px;
-                        border-radius: 8px;
-                        text-align: center;
-                        color: #333;
-                        width: 80%;
-                        max-width: 300px;
-                    }
-
-                    .popup-content h3 {
-                        color: #ff5733;
-                    }
-
-                    .popup-close-button {
-                        padding: 10px 20px;
-                        background-color: #ff5733;
-                        color: white;
-                        border: none;
-                        border-radius: 5px;
-                        cursor: pointer;
-                        margin-top: 20px;
-                    }
-
-                    .popup-close-button:hover {
-                        background-color: #c43d22;
-                    }
                 </style>
             </head>
             <body>
@@ -218,21 +177,15 @@
                 </section>
 
                 <section class="form-container">
-                    <form onsubmit="mostrarPopup(event)">
-                        <input type="text" name="name" placeholder="Nombre" required />
-                        <input type="email" name="email" placeholder="Correo electrónico" required />
-                        <textarea name="message" placeholder="Mensaje" required></textarea>
-                        <button type="submit">Enviar</button>
+                    <form>
+                        <input type="text" name="name" placeholder="Nombre"/>
+                        <input type="email" name="email" placeholder="Correo electrónico"/>
+                        <textarea name="message" placeholder="Mensaje"></textarea>
+                        <form>                    
+                        <a href="formulario.xml" class="button">Enviar</a>
+                        </form>
                     </form>
                 </section>
-
-                <!-- Popup de confirmación -->
-                <div id="popup-overlay" class="popup-overlay">
-                    <div class="popup-content">
-                        <h3>¡Felicidades! Ya eres miembro de la RooftCrew!</h3>
-                        <button class="popup-close-button" onclick="cerrarPopup()">Cerrar</button>
-                    </div>
-                </div>
 
                 <footer>
                     <p class="credits"><xsl:value-of select="game/footer/credits"/></p>
