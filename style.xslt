@@ -199,12 +199,8 @@
                         </xsl:for-each>
                     </div>
                 </section>
-<<<<<<< HEAD
-                
-=======
                 <!-- Muestra una lista de personajes, cada uno con nombre, descripción y una imagen. Las imágenes tienen un tamaño del 50% y bordes redondeados -->
 
->>>>>>> f919a11e5feee06d6e701d1f49a8a2b5a76da941
                 <!-- Controls -->
                 <section>
                     <h2>Controles</h2>
