@@ -173,6 +173,7 @@
                 <!-- Footer -->
                 <footer>
                     <a href="https://poki.com/es/g/rooftop-snipers-2" class="play-button">JUGAR YA</a>
+                     <p class="credits"><xsl:value-of select="game/footer/credits"/></p>
                 </footer>
             </body>
         </html>
