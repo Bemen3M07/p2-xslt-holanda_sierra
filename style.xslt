@@ -61,6 +61,28 @@
                         font-size: 0.8em;
                         color: #aaa;
                     }
+
+                    .button {
+                        display: inline-block;
+                        padding: 15px 30px;
+                        margin-top: 20px;
+                        font-size: 1.2em;
+                        font-weight: bold;
+                        color: #ffffff;
+                        background-color: #FF6347;
+                        border: none;
+                        border-radius: 50px;
+                        text-transform: uppercase;
+                        cursor: pointer;
+                        transition: all 0.3s ease;
+                        text-decoration: none;
+                    }
+                    .button:hover {
+                        background-color: #ff4500;
+                        box-shadow: 0px 8px 15px rgba(255, 99, 71, 0.5);
+                        transform: scale(1.05);
+                    }
+
                     /* Columnas */
                     .columns {
                         display: grid;
@@ -131,6 +153,8 @@
                 <!-- Footer -->
                 <footer>
                     <p class="credits"><xsl:value-of select="game/footer/credits"/></p>
+                     <button onclick="window.location.href='https://poki.com/es/g/rooftop-snipers-2';">JUGAR YA</button>
+                     
                 </footer>
             </body>
         </html>
