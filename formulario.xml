@@ -3,16 +3,16 @@
 <game>
     <header>
         <title>Rooftop Snipers</title>
-        <subtitle>Un duelo épico en los tejados</subtitle>
+        <subtitle>Unete a nuestro equipo!</subtitle>
     </header>
     
     <description>
-        <paragraph>Rooftop Snipers es un emocionante juego de disparos donde compites con otro jugador en un combate uno a uno en lo alto de un edificio. ¡Evita caer y derriba a tu oponente!</paragraph>
+        <paragraph>Al rellenar este formulario entraras en la RooftCrew, siendo el primero en enterarte de nuestras ultimas novedades y ofertas! ¿¡A que esperas!? UNETE YA!</paragraph>
     </description>
 
     <form>
         <header>
-            <title>Formulario de Contacto</title>
+            <title>Formulario RooftCrew</title>
         </header>
         <form_fields>
             <field name="name" label="Nombre" type="text" />
