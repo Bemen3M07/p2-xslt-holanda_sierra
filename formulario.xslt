@@ -163,15 +163,15 @@
                     }
                     /* Estilos popup*/
                     
+                    /* Asegúrate de que el popup esté oculto inicialmente */
                     .popup-overlay {
-                        display: none; /* <-- Esto asegura que el popup no se muestre al cargar */
+                        display: none; /* Popup oculto al cargar la página */
                         position: fixed;
                         top: 0;
                         left: 0;
                         width: 100%;
                         height: 100%;
                         background-color: rgba(0, 0, 0, 0.8);
-                        display: flex;
                         align-items: center;
                         justify-content: center;
                         z-index: 999;
