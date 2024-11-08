@@ -199,6 +199,7 @@
                         </xsl:for-each>
                     </div>
                 </section>
+                <!-- Muestra una lista de personajes, cada uno con nombre, descripción y una imagen. Las imágenes tienen un tamaño del 50% y bordes redondeados -->
 
                 <!-- Controls -->
                 <section>
@@ -212,10 +213,14 @@
                         </xsl:for-each>
                     </div>
                 </section>
+                <!-- Muestra los controles del juego, con la acción y las teclas asociadas a cada control -->
+
                 <!-- Footer -->
                 <footer>
                     <a href="https://poki.com/es/g/rooftop-snipers-2" class="play-button">JUGAR YA</a>
+                    <!-- Enlace para jugar, con el estilo de botón previamente definido -->
                      <p class="credits"><xsl:value-of select="game/footer/credits"/></p>
+                     <!-- Muestra los créditos del juego -->
                 </footer>
             </body>
         </html>
